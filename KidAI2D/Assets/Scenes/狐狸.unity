@@ -613,7 +613,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -647,7 +647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5dbbb07e24b91142a913e37ff0f640a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 10
+  jump: 50
+  foxName: "\u73A9\u5BB6"
+  pass: 0
 --- !u!1 &916936509
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +708,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &916936512
 CircleCollider2D:
   m_ObjectHideFlags: 0
